@@ -22,7 +22,7 @@ struct HomeManager{
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error != nil{
-                    print(error)
+                    print(error as Any)
                     DispatchQueue.main.async {
                        // actIndicator.stopAnimating()
 

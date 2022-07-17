@@ -7,8 +7,6 @@
 
 
 import UIKit
-import SwiftLoader
-import TTGSnackbar
 
 
 class Constant: UIViewController
@@ -37,21 +35,6 @@ class Constant: UIViewController
     {
         return _sharedInstance
     }
-    func show_snak_with_text(text:NSString)
-    {
-        let snackbar = TTGSnackbar(message:text as String, duration: .middle)
-        snackbar.show()
-    }
-    func showLoader()
-    {
-        SwiftLoader.show(animated: true)
-        SwiftLoader.show(title: "Loading...", animated: true)
 
-    }
-    func dismissLoader()
-    {
-        SwiftLoader.hide()
-
-    }
 }
 
